@@ -1,0 +1,5 @@
+.env
+**/.env
+prompts/model_availability_check.py
+udenv
+CLAUDE.md
