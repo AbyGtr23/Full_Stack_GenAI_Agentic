@@ -3,3 +3,4 @@
 prompts/model_availability_check.py
 udenv
 CLAUDE.md
+HF_Token.txt
