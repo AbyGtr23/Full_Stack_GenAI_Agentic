@@ -2,17 +2,19 @@
 from dotenv import load_dotenv
 # OpenAI SDK client used to call the chat completions API.
 from openai import OpenAI
+from groq import Groq
 
 # Load environment variables from a .env file (if present) into os.environ.
 load_dotenv()
 # Create an OpenAI client; the API key is picked up automatically from the
 # OPENAI_API_KEY environment variable.
-client = OpenAI()
+# client = OpenAI()
+client = Groq()
 
 # Send a simple chat completion request with a single user message.
 response = client.chat.completions.create(
     # Target model name.
-    model="gpt-4o-mini",
+    model="openai/gpt-oss-20b",
     # Conversation messages: just one user greeting.
     messages= [{"role": "user", "content": "Hello, how are you?"}]
 )
