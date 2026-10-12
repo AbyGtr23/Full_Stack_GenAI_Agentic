@@ -12,7 +12,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 # Fail fast with a clear message if no API key was configured.
 if not api_key:
     raise RuntimeError(
-        "Set GEMINI_API_KEY in your environment or in a .env file before running this script."
+        "Set API_KEY in your environment or in a .env file before running this script."
     )
 
 

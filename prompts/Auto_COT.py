@@ -55,7 +55,9 @@ Example:
 
 # Conversation history starts with just the system prompt; messages are
 # appended to this list as the conversation progresses.
-message_history = [{"role": "system", "content": SYSTEM_PROMPT}]
+message_history = [
+    {"role": "system", "content": SYSTEM_PROMPT}
+    ]
 
 # Prompt the user on the console for their question/task.
 user_query = input("Enter your query: ")

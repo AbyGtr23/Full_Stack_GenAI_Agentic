@@ -33,6 +33,6 @@ def main():
         print(response.choices[0].message.content)
     except Exception as e:
         print(f"An error occurred: {e}")
-main()
+# main()
 
-# print(get_weather_info("Sambalpur"))
+print(get_weather_info("Sambalpur"))
