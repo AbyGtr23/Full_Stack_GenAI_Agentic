@@ -14,7 +14,7 @@ import json
 # fall back to replacing unencodable characters instead of crashing.
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-except AttributeError:
+except AttributeError: 
     # reconfigure() is only available on Python 3.7+ text streams; if it's
     # missing for some reason, just continue with the default stream.
     pass
